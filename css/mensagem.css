@@ -1,0 +1,39 @@
+#container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 97vh;
+
+}
+.mensagem {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #00aa2b; /* verde para sucesso */
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+
+.mensagem.erro {
+    background-color: #dc3545; /* vermelho para erro */
+}
+
+.mensagemD{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}

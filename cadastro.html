@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styleRL.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <div id="container2">
+    <div class="cadastro">
+      <h1 style="font-size: 80px;">Cadastro</h1><br>
+
+      <form action="script.php" method="post" class="elementosForm" onsubmit="validarEmail()">
+
+        <label for="">Nome:</label>
+        <input type="text" name="nome" class="element" placeholder="Digite seu Nome " required><br>
+
+        <label for="">Email:</label>
+        <input type="email" name="email" class="element" placeholder="Digite seu Email" required><br>
+
+        <label for="">Confirme seu Email:</label>
+        <input type="email" name="confirmaEmail" class="element" placeholder="Confirme seu Email" required><br>
+
+        <label for="">Crie uma senha:</label>
+        <input type="password" name="senha" class="element" placeholder="Digite sua senha" required><br>
+
+        <label for="">Confirme sua senha:</label>
+        <input type="password" name="confirmeSenha" class="element" placeholder="Confirme sua senha" required><br>
+
+        <Style>
+          #botao1 {
+            text-decoration: none;
+            color: white;
+            font-size: 100%;
+            width: 40%;
+            font-weight: 700;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(42, 66, 110);
+            box-shadow: 0px 3px 9px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+          }
+
+          #botao1:hover {
+            transition: 300ms;
+            transform: translateY(2px);
+            background-color: rgb(28, 41, 66);
+            box-shadow: 0px 1px 9px black;
+          }
+        </Style>
+        <button type="submit" id="botao1">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
